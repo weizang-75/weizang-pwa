@@ -1,0 +1,31 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+build
+dev
+
+# node_modules
+/node_modules
+/functions/node_modules
+
+# env
+serviceAccountKey.json
+.env.production
+.env.development
+
+# serviceAccount
+/functions/serviceAccountKey.json
+
+# Firebase
+/.firebase
+
+# builds
+build
+
+# misc
+.DS_Store
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+firebase.js
+chromedriver.log

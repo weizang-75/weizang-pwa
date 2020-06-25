@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WeiZang &trade;</title>
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      rel="apple-touch-icon"
+      href="/png/apple-touch/apple-touch-icon-180x180.png"
+    />
+    <meta
+      name="description"
+      content="Bootstrap a powerful Progressive Web App"
+    />
+    <meta
+      property="og:description"
+      content="Bootstrap a powerful Progressive Web App"
+    />
+    <meta
+      name="twitter:description"
+      content="Bootstrap a powerful Progressive Web App"
+    />
+    <style>
+      html {
+        height: 100%;
+        --scrollbarBG: #ffffff;
+        --thumbBG: #636363;
+      }
+      body::-webkit-scrollbar {
+        width: 11px;
+      }
+      body::-webkit-scrollbar-track {
+        background: var(--scrollbarBG);
+      }
+      body::-webkit-scrollbar-thumb {
+        background-color: var(--thumbBG) ;
+        border-radius: 6px;
+        border: 3px solid var(--scrollbarBG);
+      }      
+      body {
+        scrollbar-width: thin;
+        scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+        margin: 0;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-family: sans-serif;
+        font-size: 1rem;
+        color: #211b1f;
+        background: #ffffff;
+        background: radial-gradient(circle, #ffffff 0%, #ffffff 100%);
+      }
+      a {
+        color: #fef600;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #01a43b;
+      }
+      .screen {
+        height: 99vh;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .logo {
+        width: 256px;
+        height: 256px;
+      }
+    </style>
+    
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Whitelabel PWA" />
+    <meta name="apple-mobile-web-app-title" content="Whitelabel PWA" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta property="og:locale" content="en_pi" />
+    <meta property="og:title" content="Whitelabel PWA" />
+    <meta property="og:type" content="website" />
+
+    <meta property="og:site_name" content="Whitelabel PWA" />
+    <meta property="og:image" content="/png/open-graph.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="450" />
+    <meta property="og:image:alt" content="Whitelabel PWA" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Whitelabel PWA" />
+    <meta name="twitter:image" content="/png/twitter-card.png" />
+    <meta name="twitter:image:alt" content="Whitelabel PWA" />
+    
+    <link
+      rel="apple-touch-startup-image"
+      href="/png/apple-touch/apple-touch-startup-2048x1536r2.png"
+      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="/png/apple-touch/apple-touch-startup-1536x2048r2.png"
+      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="/png/apple-touch/apple-touch-startup-2224x1668r2.png"
+      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="/png/apple-touch/apple-touch-startup-1668x2224r2.png"
+      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="/png/apple-touch/apple-touch-startup-2388x1668r2.png"
+      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="/png/apple-touch/apple-touch-startup-1668x2388r2.png"
+      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="/png/apple-touch/apple-touch-startup-2732x2048r2.png"
+      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="/png/apple-touch/apple-touch-startup-2048x2732r2.png"
+      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="/png/apple-touch/apple-touch-startup-2436x1125r3.png"
+      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="/png/apple-touch/apple-touch-startup-1125x2436r3.png"
+      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="/png/apple-touch/apple-touch-startup-2208x1242r3.png"
+      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="/png/apple-touch/apple-touch-startup-1242x2208r3.png"
+      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="/png/apple-touch/apple-touch-startup-2688x1242r3.png"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="/png/apple-touch/apple-touch-startup-1242x2688r3.png"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="/png/apple-touch/apple-touch-startup-1136x640r2.png"
+      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="/png/apple-touch/apple-touch-startup-640x1136r2.png"
+      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="/png/apple-touch/apple-touch-startup-1334x750r2.png"
+      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="/png/apple-touch/apple-touch-startup-750x1334r2.png"
+      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="/png/apple-touch/apple-touch-startup-1792x828r2.png"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="/png/apple-touch/apple-touch-startup-828x1792r2.png"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+
+  </head>
+
+  <body>
+    
+    <noscript>
+      <h2><a href="https://listingslab.com/whitelabel-pwa" target="_blank" rel="noopener noreferrer">
+              Listingslab's Whitelabel PWA
+          </a></h2>
+      <p>Progressive Web Apps are user experiences that have the reach of the web, and are: Reliable, Fast, Respond quickly to user interactions with silky smooth animations and no janky scrolling, Engaging, Feel like a natural app on the device, with an immersive user experience. This new level of quality allows Progressive Web Apps to earn a place on the user's home screen.</p>
+    </noscript>
+
+    <div id="app" class="screen">
+      <div class="logo">
+        <svg  viewBox="0 0 512 512">
+          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g>
+                <rect id="invisible" fill-opacity="0.01" fill="#FFFFFF" x="0" y="0" width="512" height="512"></rect>
+                <g transform="translate(131.000000, 59.000000)" fill="#211B1F" fill-rule="nonzero">
+                    <path d="M215.117227,0.179545455 L35.7033595,0 C15.9678342,0 0,16.1590909 0,35.9090909 L0,359.090909 C0,378.840909 15.9678342,395 35.7033595,395 L215.117227,395 C234.852752,395 251,378.840909 251,359.090909 L251,35.9090909 C251,16.1590909 234.852752,0.179545455 215.117227,0.179545455 Z M215.117227,323.181818 L35.7033595,323.181818 L35.7033595,71.8181818 L215.117227,71.8181818 L215.117227,323.181818 Z" id="Shape"></path>
+                </g>
+                <g transform="translate(176.000000, 158.000000)" fill="#211B1F" fill-rule="nonzero">
+                    <circle id="Oval" cx="78" cy="20" r="20"></circle>
+                    <path d="M117.010391,60.1835 C113.172372,56.342 106.578851,49.25 93.7854523,49.25 C91.7188264,49.25 79.8111247,49.25 68.7891198,49.25 C41.7261614,49.1515 19.6821516,27.0875 19.6821516,0 L0,0 C0,31.126 20.7646699,57.524 49.205379,66.0935 L49.205379,197 L68.8875306,197 L68.8875306,137.9 L88.5696822,137.9 L88.5696822,197 L108.251834,197 L108.251834,79.2925 L147.124083,118.2 L161,104.3115 L117.010391,60.1835 Z" id="Path"></path>
+                </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
